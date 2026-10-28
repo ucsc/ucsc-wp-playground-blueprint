@@ -20,10 +20,12 @@ foreach ( array( $ucsc_hello, $ucsc_sample ) as $ucsc_default ) {
 $ucsc_home = get_page_by_path( 'home' );
 $ucsc_news = get_page_by_path( 'campus-news' );
 
+// A posts page only takes effect with a static front page, so set both or neither.
 if ( $ucsc_home ) {
 	update_option( 'show_on_front', 'page' );
 	update_option( 'page_on_front', $ucsc_home->ID );
-}
-if ( $ucsc_news ) {
-	update_option( 'page_for_posts', $ucsc_news->ID );
+
+	if ( $ucsc_news ) {
+		update_option( 'page_for_posts', $ucsc_news->ID );
+	}
 }
