@@ -2,7 +2,7 @@
 
 This repository is a [WordPress Playground](https://developer.wordpress.org/playground/) Blueprint Bundle. It opens a generic UC Santa Cruz campus site in the browser. You do not install anything, and each visitor gets a new copy of the site.
 
-[Open in Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json)
+[Open in Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/wordpress-blueprints/main/blueprint.json)
 
 > This is a proof of concept. Some features do not work. See [Known limitations](#known-limitations).
 
@@ -37,7 +37,7 @@ content/setup.php            Cleanup, front page and posts page, run after impor
 Use the raw GitHub URL of `blueprint.json`. The `raw.githubusercontent.com` server sends the CORS header that Playground needs.
 
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/wordpress-blueprints/main/blueprint.json
 ```
 
 To pin a version, replace `main` with a tag or a commit SHA.
@@ -57,7 +57,7 @@ Load the zip from New > Blueprint URL in Playground, or give it to the CLI (see 
 Add this line to the README of any UCSC repository:
 
 ```markdown
-[Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json)
+[Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/wordpress-blueprints/main/blueprint.json)
 ```
 
 ## How the theme and plugin are installed
