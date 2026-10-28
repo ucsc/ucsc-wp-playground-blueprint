@@ -1,0 +1,89 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "UC Santa Cruz WordPress",
+		"description": "Generic UC Santa Cruz campus site: the UCSC 2022 theme with UCSC Custom Functionality, The Icon Block and the free Advanced Custom Fields plugin, plus sample content. The theme and UCSC plugin install from each repo's latest GitHub release. Proof of concept: ACF PRO isn't included, so ACF blocks (the theme's main navigation and breadcrumbs, and the custom functionality plugin's blocks) don't render, and the theme's ACF options page is unavailable.",
+		"author": "ucsc",
+		"categories": ["Theme", "UCSC"]
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "UC Santa Cruz",
+				"blogdescription": "WordPress Playground preview",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "advanced-custom-fields"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "icon-block"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://github.com/ucsc/ucsc-custom-functionality/releases/latest/download/ucsc-custom-functionality.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "ucsc-custom-functionality"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://github.com/ucsc/ucsc-2022/releases/latest/download/ucsc-2022.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "ucsc-2022"
+			}
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "bundled",
+				"path": "/content/sample-content.wxr"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/tmp/ucsc-setup.php",
+			"data": {
+				"resource": "bundled",
+				"path": "/content/setup.php"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/tmp/ucsc-setup.php';"
+		}
+	]
+}

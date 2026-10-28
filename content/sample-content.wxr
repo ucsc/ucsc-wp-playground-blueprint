@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	Sample content for the UC Santa Cruz WordPress Playground blueprint.
+	Placeholder text only. Replace with a real export (Tools > Export) when ready.
+	Write internal links as root-relative paths (href="/about/"). Playground
+	redirects them to the site's own /scope:… address.
+-->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>UC Santa Cruz</title>
+	<link>https://playground.wordpress.net</link>
+	<description>WordPress Playground preview</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://playground.wordpress.net</wp:base_site_url>
+	<wp:base_blog_url>https://playground.wordpress.net</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@localhost.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[admin]]></wp:author_display_name>
+		<wp:author_first_name><![CDATA[]]></wp:author_first_name>
+		<wp:author_last_name><![CDATA[]]></wp:author_last_name>
+	</wp:author>
+
+	<wp:category>
+		<wp:term_id>101</wp:term_id>
+		<wp:category_nicename><![CDATA[campus-life]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Campus Life]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>102</wp:term_id>
+		<wp:category_nicename><![CDATA[research]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Research]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>103</wp:term_id>
+		<wp:category_nicename><![CDATA[announcements]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Announcements]]></wp:cat_name>
+	</wp:category>
+
+	<!-- Pages -->
+
+	<item>
+		<title><![CDATA[Home]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Welcome to the UC Santa Cruz Playground</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This is sample content for previewing the UCSC 2022 theme and UCSC plugins. Every word here is placeholder text, so edit or delete anything you like. Changes stay in your browser and disappear when you close the tab.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/about/">About this department</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/campus-news/">Latest news</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Academics</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A sample column describing degree programs, with a link to the <a href="/academics/">Academics</a> page.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Research</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A sample column highlighting research areas, labs and centers.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Get in touch</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A sample column pointing visitors to the <a href="/contact/">Contact</a> page.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Recent news</h2>
+<!-- /wp:heading -->
+
+<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"displayPostContent":true,"excerptLength":25} /-->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>201</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title><![CDATA[About]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>This sample About page shows how body text, headings, lists and quotes look in the UCSC 2022 theme.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Our mission</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Placeholder text for a department or unit mission statement. Two or three sentences is typical.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">What we do</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Sample service or program one</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Sample service or program two</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Sample service or program three</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>A sample pull quote, attributed below.</p>
+<!-- /wp:paragraph --><cite>Placeholder name, Placeholder title</cite></blockquote>
+<!-- /wp:quote -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>202</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:05:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:05:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title><![CDATA[Academics]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>A sample parent page for degree programs. Its child page shows how the theme handles page hierarchy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Program</th><th>Degree</th><th>Format</th></tr></thead><tbody><tr><td>Sample Program A</td><td>B.A.</td><td>In person</td></tr><tr><td>Sample Program B</td><td>B.S.</td><td>In person</td></tr><tr><td>Sample Program C</td><td>M.S.</td><td>Hybrid</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>See <a href="/academics/undergraduate-programs/">Undergraduate Programs</a> for a sample child page.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>203</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:10:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:10:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[academics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title><![CDATA[Undergraduate Programs]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>A sample child page of Academics.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Sample Program A</summary><!-- wp:paragraph -->
+<p>Placeholder description of the program, its requirements and its learning outcomes.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Sample Program B</summary><!-- wp:paragraph -->
+<p>Placeholder description of the program, its requirements and its learning outcomes.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>204</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:15:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:15:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[undergraduate-programs]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>203</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title><![CDATA[Campus News]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>205</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:20:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:20:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[campus-news]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title><![CDATA[Contact]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Sample contact details. Replace with real information before using this content anywhere public.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Office</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sample Building, Room 100<br>1156 High Street<br>Santa Cruz, CA 95064</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Hours</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Monday to Friday, 9 a.m. to 5 p.m.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>206</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-01 09:25:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-01 16:25:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<!-- Posts -->
+
+	<item>
+		<title><![CDATA[Sample story: Fall quarter welcome events]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Placeholder news story. It exists to show how a standard post renders, including its date, category and excerpt on the Campus News page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A subheading</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>More placeholder text, with a <a href="/about/">sample internal link</a>.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[A placeholder story showing how a standard post renders.]]></excerpt:encoded>
+		<wp:post_id>301</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-20 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-20 17:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[sample-fall-quarter-welcome]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="campus-life"><![CDATA[Campus Life]]></category>
+	</item>
+
+	<item>
+		<title><![CDATA[Sample story: New lab opens for student research]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Placeholder research story, filed under Research.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>A sample numbered point</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Another sample numbered point</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[A placeholder research story.]]></excerpt:encoded>
+		<wp:post_id>302</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-22 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-22 17:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[sample-new-research-lab]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="research"><![CDATA[Research]]></category>
+	</item>
+
+	<item>
+		<title><![CDATA[Sample announcement: Office hours change]]></title>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Placeholder announcement, filed under Announcements and marked sticky so it shows first.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[A placeholder sticky announcement.]]></excerpt:encoded>
+		<wp:post_id>303</wp:post_id>
+		<wp:post_date><![CDATA[2026-10-24 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-10-24 17:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[sample-office-hours-change]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>1</wp:is_sticky>
+		<category domain="category" nicename="announcements"><![CDATA[Announcements]]></category>
+	</item>
+
+</channel>
+</rss>
