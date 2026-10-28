@@ -2,9 +2,9 @@
 
 A [WordPress Playground](https://developer.wordpress.org/playground/) Blueprint Bundle that opens a generic UC Santa Cruz campus site in the browser. Nothing to install, and every visitor gets a fresh copy.
 
-**[Open in Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/REPO-NAME/main/blueprint.json)**
+**[Open in Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json)**
 
-> Proof of concept. Replace `REPO-NAME` in this README with the repo's name.
+> Proof of concept. See [Known limitations](#known-limitations).
 
 ## What's in it
 
@@ -35,7 +35,7 @@ content/setup.php            Cleanup, front page and posts page, run after impor
 **From a link.** Use the raw GitHub URL of `blueprint.json`. `raw.githubusercontent.com` sends the CORS header Playground needs.
 
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/REPO-NAME/main/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json
 ```
 
 To pin a version, replace `main` with a tag or commit SHA.
@@ -53,7 +53,7 @@ Load the zip from Playground's **New > Blueprint URL**, or pass it to the CLI (b
 Add this to any UCSC repo's README:
 
 ```markdown
-[Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/REPO-NAME/main/blueprint.json)
+[Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/ucsc-wp-playground-blueprint/main/blueprint.json)
 ```
 
 ## How the theme and plugin are installed
@@ -100,7 +100,7 @@ The WXR file holds placeholder text only. To replace it, build the content on an
 Run the bundle with the Playground CLI. It needs Node.js 24.18 or later.
 
 ```bash
-npx @wp-playground/cli@latest server --blueprint=.
+npx @wp-playground/cli@latest server --blueprint=. --blueprint-may-read-adjacent-files
 ```
 
 Then open the address it prints, usually `http://127.0.0.1:9400`. You're logged in as `admin`.
