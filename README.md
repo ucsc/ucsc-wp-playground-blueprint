@@ -13,6 +13,7 @@ This repository is a [WordPress Playground](https://developer.wordpress.org/play
 | [UCSC 2022 theme](https://github.com/ucsc/ucsc-2022) | Latest GitHub release zip |
 | [UCSC Custom Functionality](https://github.com/ucsc/ucsc-custom-functionality) | Latest GitHub release zip |
 | [UCSC Blocks](https://github.com/ucsc/ucsc-blocks) | Latest GitHub release zip |
+| [UCSC Gutenberg Blocks](https://github.com/ucsc/ucsc-gutenberg-blocks) (installed, not activated) | Latest GitHub release zip |
 | Advanced Custom Fields (free) | wordpress.org |
 | The Icon Block | wordpress.org |
 | Sample pages and posts | `content/sample-content.wxr` in this repository |
@@ -63,7 +64,7 @@ Add this line to the README of any UCSC repository:
 
 ## How the theme and plugins are installed
 
-The theme, UCSC Custom Functionality, and UCSC Blocks install from the newest release of each repository. The blueprint uses the GitHub address `releases/latest/download/<repo>.zip`. When a repository publishes a new release, Playground uses it. You do not change this repository.
+The theme, UCSC Custom Functionality, UCSC Blocks, and UCSC Gutenberg Blocks install from the newest release of each repository. The blueprint uses the GitHub address `releases/latest/download/<repo>.zip`. When a repository publishes a new release, Playground uses it. You do not change this repository.
 
 GitHub sends release files without CORS headers, so the browser blocks the first, direct download from Playground. Playground then fetches the file through its own CORS proxy, and the install succeeds. A live boot with ucsc-2022 v26.10.19 and ucsc-custom-functionality v26.10.7 showed this behavior.
 
@@ -86,6 +87,8 @@ If the release of a UCSC plugin includes a `<repo>.zip` file, you can add the pl
 ```
 
 Put each plugin step before the theme step. The theme needs ACF to be active at load time.
+
+If you want the plugin installed but not active, set `"activate"` to `false`.
 
 ## Updating the sample content
 
