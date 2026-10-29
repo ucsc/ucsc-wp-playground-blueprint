@@ -2,7 +2,7 @@
 
 This repository is a WordPress Playground Blueprint Bundle. A bundle is a `blueprint.json` file plus the files that it loads with `"resource": "bundled"`. Playground fetches bundled files from the same folder as the blueprint, so the repository root is the bundle. There is no build step, no package manager, no linter, and no test suite.
 
-The bundle boots a generic UC Santa Cruz campus site. It installs the UCSC 2022 theme, the UCSC Custom Functionality plugin, the free Advanced Custom Fields (ACF) plugin, and The Icon Block. Then it imports sample content.
+The bundle boots a generic UC Santa Cruz campus site. It installs the UCSC 2022 theme, the UCSC Custom Functionality plugin, the UCSC Blocks plugin, the free Advanced Custom Fields (ACF) plugin, and The Icon Block. Then it imports sample content.
 
 ## Running it locally
 
