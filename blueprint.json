@@ -2,7 +2,7 @@
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"meta": {
 		"title": "UC Santa Cruz WordPress",
-		"description": "Generic UC Santa Cruz campus site: the UCSC 2022 theme with UCSC Custom Functionality, UCSC Blocks, The Icon Block and the free Advanced Custom Fields plugin, plus sample content. The theme and UCSC plugins install from each repo's latest GitHub release. Proof of concept: ACF PRO isn't included, so ACF blocks (the theme's main navigation and breadcrumbs, and the custom functionality plugin's blocks) don't render, and the theme's ACF options page is unavailable.",
+		"description": "Generic UC Santa Cruz campus site: the UCSC 2022 theme with UCSC Custom Functionality, UCSC Blocks, The Icon Block and the free Advanced Custom Fields plugin, plus sample content. UCSC Gutenberg Blocks is installed but not activated. The theme and UCSC plugins install from each repo's latest GitHub release. Proof of concept: ACF PRO isn't included, so ACF blocks (the theme's main navigation and breadcrumbs, and the custom functionality plugin's blocks) don't render, and the theme's ACF options page is unavailable.",
 		"author": "ucsc",
 		"categories": ["Theme", "UCSC"]
 	},
@@ -64,6 +64,17 @@
 			"options": {
 				"activate": true,
 				"targetFolderName": "ucsc-blocks"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://github.com/ucsc/ucsc-gutenberg-blocks/releases/latest/download/ucsc-gutenberg-blocks.zip"
+			},
+			"options": {
+				"activate": false,
+				"targetFolderName": "ucsc-gutenberg-blocks"
 			}
 		},
 		{
