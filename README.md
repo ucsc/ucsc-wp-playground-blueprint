@@ -61,7 +61,7 @@ Add this line to the README of any UCSC repository:
 [Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/wordpress-blueprints/main/blueprint.json)
 ```
 
-## How the theme and plugin are installed
+## How the theme and plugins are installed
 
 The theme, UCSC Custom Functionality, and UCSC Blocks install from the newest release of each repository. The blueprint uses the GitHub address `releases/latest/download/<repo>.zip`. When a repository publishes a new release, Playground uses it. You do not change this repository.
 
@@ -104,7 +104,7 @@ Follow these rules for the new content:
 ## Known limitations
 
 - ACF PRO is not included. It is licensed, so a public blueprint cannot download it. ACF blocks do not render. This affects the main navigation and the breadcrumbs of the theme, and the blocks of the custom functionality plugin. The ACF options page of the theme is not available.
-- The GitHub release zips download through the CORS proxy of Playground. See [How the theme and plugin are installed](#how-the-theme-and-plugin-are-installed).
+- The GitHub release zips download through the CORS proxy of Playground. See [How the theme and plugins are installed](#how-the-theme-and-plugins-are-installed).
 - Changes do not persist. If you do not save the site from the Playground menu, your changes disappear when you close the tab.
 
 ## Testing changes locally

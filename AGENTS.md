@@ -25,7 +25,7 @@ The order of the steps in `blueprint.json` matters:
 
 `content/setup.php` deletes the default "Hello world!" post and "Sample Page". If it finds the page with slug `home`, it makes that page the front page. It then makes the page with slug `campus-news` the posts page. If there is no `home` page, the script does not set a posts page either. If you rename those slugs in the WXR file, update `setup.php` too.
 
-The theme and the UCSC plugin install from `https://github.com/ucsc/<repo>/releases/latest/download/<repo>.zip`. These downloads go through the CORS proxy of Playground. The "How the theme and plugin are installed" section of `README.md` explains why. Each install step sets `targetFolderName` to the repository name, so the folder name stays the same for every release.
+The theme and the UCSC plugins install from `https://github.com/ucsc/<repo>/releases/latest/download/<repo>.zip`. These downloads go through the CORS proxy of Playground. The "How the theme and plugins are installed" section of `README.md` explains why. Each install step sets `targetFolderName` to the repository name, so the folder name stays the same for every release.
 
 ## Constraints
 
