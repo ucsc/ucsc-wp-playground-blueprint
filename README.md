@@ -12,6 +12,7 @@ This repository is a [WordPress Playground](https://developer.wordpress.org/play
 |------|--------|
 | [UCSC 2022 theme](https://github.com/ucsc/ucsc-2022) | Latest GitHub release zip |
 | [UCSC Custom Functionality](https://github.com/ucsc/ucsc-custom-functionality) | Latest GitHub release zip |
+| [UCSC Blocks](https://github.com/ucsc/ucsc-blocks) | Latest GitHub release zip |
 | Advanced Custom Fields (free) | wordpress.org |
 | The Icon Block | wordpress.org |
 | Sample pages and posts | `content/sample-content.wxr` in this repository |
@@ -60,9 +61,9 @@ Add this line to the README of any UCSC repository:
 [Preview in WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ucsc/wordpress-blueprints/main/blueprint.json)
 ```
 
-## How the theme and plugin are installed
+## How the theme and plugins are installed
 
-The theme and UCSC Custom Functionality install from the newest release of each repository. The blueprint uses the GitHub address `releases/latest/download/<repo>.zip`. When a repository publishes a new release, Playground uses it. You do not change this repository.
+The theme, UCSC Custom Functionality, and UCSC Blocks install from the newest release of each repository. The blueprint uses the GitHub address `releases/latest/download/<repo>.zip`. When a repository publishes a new release, Playground uses it. You do not change this repository.
 
 GitHub sends release files without CORS headers, so the browser blocks the first, direct download from Playground. Playground then fetches the file through its own CORS proxy, and the install succeeds. A live boot with ucsc-2022 v26.10.19 and ucsc-custom-functionality v26.10.7 showed this behavior.
 
@@ -103,7 +104,7 @@ Follow these rules for the new content:
 ## Known limitations
 
 - ACF PRO is not included. It is licensed, so a public blueprint cannot download it. ACF blocks do not render. This affects the main navigation and the breadcrumbs of the theme, and the blocks of the custom functionality plugin. The ACF options page of the theme is not available.
-- The GitHub release zips download through the CORS proxy of Playground. See [How the theme and plugin are installed](#how-the-theme-and-plugin-are-installed).
+- The GitHub release zips download through the CORS proxy of Playground. See [How the theme and plugins are installed](#how-the-theme-and-plugins-are-installed).
 - Changes do not persist. If you do not save the site from the Playground menu, your changes disappear when you close the tab.
 
 ## Testing changes locally
